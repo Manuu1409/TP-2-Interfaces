@@ -5,6 +5,7 @@ body {
     backdrop-filter: blur(4px);
     background-repeat: no-repeat;
     color: white;
+    
 }
 
 u {
@@ -87,4 +88,17 @@ button:active {
 
 footer {
     background-color: gray;
+    
+}
+
+.password {
+    display: flex;
+}
+
+img {
+    padding: 5px;
+}
+
+.container-login {
+    text-align: center;
 }
