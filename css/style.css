@@ -7,8 +7,9 @@ body {
   color: white;
 }
 
-u {
-  padding: 50px;
+
+a {
+  color:rgb(133, 185, 252)
 }
 
 .center-logo {
@@ -18,7 +19,6 @@ u {
 .separator-container {
   display: flex;
   justify-content: center;
-  margin: 15px;
   text-align: center;
 }
 
@@ -26,6 +26,7 @@ u {
   background-color: grey;
   height: 1px;
   width: 50%;
+  margin-bottom: 50px;
 }
 
 .form {
@@ -40,24 +41,26 @@ u {
 .form input {
   width: 300px;
   height: 30px;
-  margin: 10px;
+  
 }
 
 button {
   border: 0;
   background-image: linear-gradient(150deg, #008000, #2cb32c, #004100);
   display: flex;
-  border-radius: 15px;
+  border-radius: 30px;
   padding: 3px;
+  margin: 30px;
   color: white;
   cursor: pointer;
   transition: 0.3s;
 }
 
 button span {
+  font-size:x-large;
   background-color: #2cb32c;
-  padding: 10px 30px;
-  border-radius: 8px;
+  padding: 15px 50px;
+  border-radius: 30px;
   transition: 0.3s;
 }
 
@@ -72,14 +75,22 @@ button:active {
 .grid-container {
   display: grid;
   grid-template-columns: 40% 40%;
+  border: 15px white;
 }
 
 .item {
   display: flex;
+  padding: 20px;
+}
+
+u {
+  padding: 35px;
 }
 
 footer {
-  background-color: gray;
+  background-color: #202020;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .password {
@@ -92,4 +103,23 @@ img {
 
 .container-login {
   text-align: center;
+  margin-bottom: 400px;
+
+}
+
+.user {
+  margin: 30px;
+}
+
+.separator2 {
+  background-color: grey;
+  height: 1px;
+  width: 250%;
+  
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
