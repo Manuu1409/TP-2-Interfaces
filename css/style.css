@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../images/fondoo.png);
+  background-image: url(../images/fondo.jpeg);
   backdrop-filter: blur(4px);
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
 }
@@ -75,7 +76,7 @@ button:active {
 .grid-container {
   display: grid;
   grid-template-columns: 40% 40%;
-  border: 15px white;
+  
 }
 
 .item {
@@ -103,8 +104,6 @@ img {
 
 .container-login {
   text-align: center;
-  margin-bottom: 400px;
-
 }
 
 .user {
