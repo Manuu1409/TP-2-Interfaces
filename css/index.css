@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  outline: none;
+}
+
+body {
+  background-color: black;
+}
+
+header,
+nav,
+.main,
+footer {
+  display: grid;
+}
+header {
+  background: #434343;
+  width: 100%;
+  height: 5rem;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 50% 50%;
+  margin: 0%;
+}
+svg {
+  width: 100%;
+  height: 5rem;
+}
+rect {
+}
+div.logoo {
+  width: 100%;
+  height: 5rem;
+  align-content: flex-start;
+  align-self: flex-start;
+}
+.logo {
+  width: 66.6%;
+  height: 4rem;
+}
+
+.userr {
+  width: 100%;
+  height: 5rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.user {
+  width: 20%;
+  height: 4rem;
+}
+nav {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: red;
+  width: 50%;
+  height: 20%;
+}
