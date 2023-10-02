@@ -6,7 +6,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  font-family: 'Baloo Chettan 2', cursive;
 }
+
+
 
 a {
   color:rgb(133, 185, 252)
@@ -26,7 +29,7 @@ a {
   background-color: grey;
   height: 1px;
   width: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .form {
@@ -82,8 +85,8 @@ button:active {
 .item {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinea el contenido al centro horizontalmente */
-  text-align: center; /* Alinea el texto al centro */
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -97,7 +100,7 @@ u {
 }
 
 footer {
-  background-color: #202020;
+  background-color: #003366;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
 }
@@ -115,8 +118,8 @@ img {
 }
 .container-login {
   text-align: center;
+  font-size:22px;
 }
-
 
 
 .separator2 {
@@ -126,13 +129,22 @@ img {
   
 }
 
+.redirect {
+  color: #5263FF;
+}
 .image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
-.form input {
+.image-size {
+  width: 350px;
+  height: 50px;
+}
+
+.form input, .input-subscribe {
   text-align: center;
   border-radius: 10px;
   height: 10px;
