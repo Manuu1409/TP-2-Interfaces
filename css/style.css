@@ -47,7 +47,50 @@ a {
   
 }
 
-button {
+.loginButton {
+  font-size: 20px;
+  color: #fff;
+  background-color: #29ca8e;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+
+
+.load {
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: white;
+  animation: animationButton 1s ease infinite;
+
+}
+
+@keyframes animationButton {
+  0%{
+    transform: rotate(0turn);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+  
+}
+
+
+
+
+
+
+
+/*button {
   border: 0;
   background-image: linear-gradient(150deg, #008000, #2cb32c, #004100);
   display: flex;
@@ -74,7 +117,7 @@ button:hover span {
 button:active {
   transform: scale(1);
 }
-
+*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
@@ -125,7 +168,6 @@ img {
 .separator2 {
   background-color: grey;
   height: 1px;
-  
   
 }
 
