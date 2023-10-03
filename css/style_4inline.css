@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #001427;
+    color: white;
+  }
+  
+  .breadcrumbs {
+    background-color: #001C40;
+    width: 18%;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .container img {
+    height: 400px;
+    margin-left: 50px;
+  }
+  
+  .container p,
+  .container h2 {
+    margin-left: 45px;
+  }
+  
+  .container h2,
+  .container p {
+    margin-bottom: 10px;
+  }
+  
