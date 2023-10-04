@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #001427;
+    background-color: #001122;
     color: white;
   }
   
@@ -17,6 +17,7 @@ body {
   .container img {
     height: 400px;
     margin-left: 50px;
+    border: 1px solid white
   }
   
   .container p,
@@ -29,3 +30,123 @@ body {
     margin-bottom: 10px;
   }
   
+  .description{
+  text-align: center;
+}
+
+.separator {
+  background-color: grey;
+  height: 1px;
+}
+
+.background {
+  background-color:#001427;
+}
+
+
+footer {
+  background-color: #003366;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.image-container2 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.image:first-child {
+  margin-right: auto;
+}
+
+.image {
+  height: 150px ;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 10px;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.item {
+  display: flex;
+  padding: 20px;
+}
+
+u {
+  padding: 35px;
+}
+
+.separator2 {
+  background-color: grey;
+  height: 1px;
+  margin: 10;
+  
+}
+
+.container-publish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.publish {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  border: 1px solid #000;
+  background-color: #005577;
+  padding: 20px;
+}
+
+.publish-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image2 {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+}
+.reading {
+  display: flex;
+  background-color: #005577;
+  width: 1100px;
+  height: 220px;
+  padding: 20px;
+}
+.comments {
+  background-color: #FFFFFF;
+  flex-grow: 1;
+  height: 100px;
+  width: 1000px;
+}
+
+.recommendation {
+  display: flex;
+  align-items: center;
+}
+
+
+.btn-publish {
+  margin-left: auto;
+  
+}
