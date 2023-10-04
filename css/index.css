@@ -5,45 +5,51 @@
   list-style: none;
   outline: none;
 }
-
 body {
   background-color: black;
-}
-.container {
   display: grid;
-  float: left;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+  min-height: 100vh; /* Usa 'vh' en lugar de '%' para calcular la altura de la ventana */
+  margin: 0;
+}
+html {
+  height: 100%;
 }
 header,
 nav,
 .main,
+.container,
 footer {
   display: grid;
+  width: 100%;
+}
+.container {
+  min-height: 100vh; /* Establece una altura mínima para asegurar que la cuadrícula llene la pantalla */
+  grid-template-rows: auto 1fr auto; /* Primera fila para header, segunda fila para main y tercera fila para footer */
+  grid-template-columns: 1fr; /* Columnas */ /* Una columna que ocupará todo el espacio disponible */
 }
 header {
-  background: #434343;
+  background: #003366;
   width: calc(100% - 4%);
-  height: 5rem;
+  height: auto; /* Cambia la altura a 'auto' para ajustarse al contenido */
   grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 50% 50%;
+  grid-row: 1; /* El encabezado ocupa la primera fila */
   margin: 0%;
   padding-left: 2%;
   padding-right: 2%;
-  float: left;
-  position: relative;
-  overflow: hidden;
 }
-
-.svgg {
+.svgg,
+.logoo,
+.headerDerecha {
+  height: auto;
   width: 100%;
-  height: 5rem;
+}
+.menuHamburgesa {
+  width: 100%;
   display: grid;
   justify-content: start;
   align-content: center;
 }
-svg {
+.hamburgesa {
   width: 6rem;
   height: 4rem;
 }
@@ -51,9 +57,7 @@ rect {
   width: 100%;
   height: 20%;
 }
-div.logoo {
-  width: 100%;
-  height: 5rem;
+.logoo {
   margin: auto;
   display: grid;
   justify-content: center;
@@ -63,11 +67,12 @@ div.logoo {
   width: 22rem;
   height: 5rem;
 }
-
-.userr {
-  width: 100%;
-  height: 5rem;
+.headerDerecha {
   display: grid;
+  grid-template-columns: 5rem 5rem;
+  grid-template-rows: 1fr;
+  justify-items: end;
+  align-items: center;
   justify-content: end;
   align-content: center;
 }
@@ -75,11 +80,30 @@ div.logoo {
   width: 100%;
   height: 4rem;
 }
-
+.carrito {
+  width: 100%;
+  height: 4rem;
+}
 nav {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-row: 2; /* El nav ocupa la segunda fila */
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   background-color: red;
-  width: 50%;
-  height: 20%;
+  width: 100%;
+  height: 20vh;
+}
+.main {
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+  color: white;
+}
+footer {
+  grid-row: auto;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr;
+  background-color: #202020;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
