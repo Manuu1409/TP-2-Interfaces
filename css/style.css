@@ -61,6 +61,15 @@ a {
   place-content: center;
 }
 
+.container-captcha {
+  display: flex;
+  justify-content: center;
+}
+
+.captcha {
+  height: 80px;
+  margin: 10px;
+}
 
 .load {
   pointer-events: none;
