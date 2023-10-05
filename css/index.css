@@ -166,3 +166,30 @@ footer {
   border-bottom: 1px solid white;
   border-top: 1px solid white;
 }
+.cardJuego {
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+  width: 17rem;
+}
+.cardJuego img {
+  height: 75%;
+  width: 100%;
+}
+.recuadroNombre {
+  width: calc(100% - 4%);
+  height: calc(25% - 8%);
+  padding-left: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #005d9b;
+  font-family: "Baloo Chettan 2", cursive;
+}
+.recuadroNombreChico {
+  color: white;
+  font-size: 0.8rem;
+}
+.recuadroNombreGrande {
+  color: black;
+  font-size: 1.1rem;
+}

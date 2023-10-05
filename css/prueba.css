@@ -4,126 +4,68 @@
   border: 0;
   list-style: none;
   outline: none;
+  box-sizing: border-box;
 }
+
 body {
   background-color: #012;
-  display: grid;
-  min-height: 100vh; /* Usa 'vh' en lugar de '%' para calcular la altura de la ventana */
-  margin: 0;
+  font-family: "Baloo Chettan 2", cursive;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 .main {
-  display: grid;
-  width: 100%;
-  height: 46vh;
-  grid-row: 2;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  align-items: start;
-  justify-content: end;
+  background-color: #0080d5;
+  border-radius: 15px;
+  width: 90%;
+  padding: 10px 40px;
+  overflow: hidden;
 }
-.cardJuegoBibloteca {
-  display: grid;
-  align-items: center;
-  align-content: center;
-  width: 10rem;
-  height: 10rem;
-  /*width: calc(100% - 14%);
-  height: calc(100% - 10%);
-  margin-left: 14%;
-  padding-top: 5%;
-  padding-bottom: 5%;*/
+.main .swiper-main {
+  width: 100%;
+  height: 100%;
 }
 
-.cardJuegoBibloteca img {
+.swiper-slide {
+  position: relative;
+  text-align: start;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px rgba(196, 196, 196, 0.25);
+}
+.swiper-slide:hover img {
+  filter: blur(5px);
+}
+.swiper-slide .card-tittle p {
+  font-size: 0.8rem;
+}
+.swiper-slide .card-text p {
+  font-size: 1.1rem;
+  color: black;
+}
+.swiper-slide img {
+  display: block;
   width: 100%;
-  height: 14rem;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-.recuadroNombre,
-.recuadroNombreGrande {
+.main .card-descripcion {
+  padding: 0.3rem 0.5rem 0.5rem;
   background-color: #005d9b;
-  font-family: "Baloo Chettan 2", cursive;
-  width: calc(100% - 4%);
-  height: calc(100% - 4%);
-  padding-left: 4%;
-  padding-top: 4%;
-  padding-bottom: 2%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
-.recuadroNombre {
-  color: white;
+
+.main .card-descripcion .card-tittle {
   font-size: 1rem;
 }
-.recuadroNombreGrande {
-  color: black;
-  font-size: 1.4rem;
-  padding-top: 0%;
+.swiper-button-next {
+  right: 26px !important;
 }
-
-.wrapper {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr;
-  width: 80%;
-  height: 30vh;
-}
-.wrapper i {
-  height: 44px;
-  width: 44px;
-  color: #343f4f;
-  cursor: pointer;
-  font-size: 1.15rem;
-  line-height: 44px;
-  background: #fff;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-}
-.wrapper i:active {
-  transform: translateY(-50%) scale(0.9);
-}
-.wrapper i:hover {
-  background: #f2f2f2;
-}
-.wrapper i:first-child {
-  left: -22px;
-  display: none;
-}
-.wrapper i:last-child {
-  right: -22px;
-}
-.wrapper .carousel {
-  display: flex;
-  font-size: 0px;
-  cursor: pointer;
-  overflow: hidden;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-}
-.carousel.dragging {
-  cursor: grab;
-  scroll-behavior: auto;
-}
-.carousel.dragging img {
-  pointer-events: none;
-}
-.carousel img {
-  height: 340px;
-  user-select: none;
-  margin-left: 14px;
-  width: calc(100% / 3);
-}
-.carousel img:first-child {
-  margin-left: 0px;
-}
-@media screen and (max-width: 900px) {
-  .carousel img {
-    width: calc(100% / 2);
-  }
-}
-@media screen and (max-width: 550px) {
-  .carousel img {
-    width: 100%;
-  }
+.swiper-button-prev {
+  left: 26px !important;
 }
