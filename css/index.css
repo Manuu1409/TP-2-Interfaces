@@ -6,7 +6,7 @@
   outline: none;
 }
 body {
-  background-color: black;
+  background-color: #012;
   display: grid;
   min-height: 100vh; /* Usa 'vh' en lugar de '%' para calcular la altura de la ventana */
   margin: 0;
@@ -82,22 +82,81 @@ rect {
 }
 .carrito {
   width: 100%;
-  height: 4rem;
+  height: 4.5rem;
 }
 nav {
   grid-row: 2; /* El nav ocupa la segunda fila */
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  background-color: red;
+  grid-template-rows: 10.5% 89.5%;
   width: 100%;
-  height: 20vh;
+  height: 46vh;
+  margin-top: 2rem;
+  justify-items: center;
+  align-items: end;
+  justify-content: end;
 }
+nav p {
+  justify-items: start;
+  align-items: start;
+  justify-content: start;
+  padding-bottom: 0.5%;
+}
+p {
+  color: white;
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 1.5rem;
+  width: 90%;
+}
+.biblioteca {
+  display: grid;
+  grid-template-columns: 25rem 25rem 25rem;
+  grid-template-rows: 1fr;
+  width: 90%;
+  height: 100%;
+  background-color: #0080d5;
+}
+nav .cardJuegoBibloteca {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  width: calc(100% - 14%);
+  height: calc(100% - 10%);
+  margin-left: 14%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.cardJuegoBibloteca img {
+  width: 100%;
+  height: 14rem;
+}
+.recuadroNombre,
+.recuadroNombreGrande {
+  background-color: #005d9b;
+  font-family: "Baloo Chettan 2", cursive;
+  width: calc(100% - 4%);
+  height: calc(100% - 4%);
+  padding-left: 4%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.recuadroNombre {
+  color: white;
+  font-size: 1rem;
+}
+.recuadroNombreGrande {
+  color: black;
+  font-size: 1.4rem;
+  padding-top: 0%;
+}
+
 .main {
   width: 100%;
   height: 80vh;
-  background-color: black;
+  background-color: #012;
   color: white;
 }
+
 footer {
   grid-row: auto;
   width: 100%;
