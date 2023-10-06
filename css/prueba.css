@@ -79,7 +79,75 @@ rect {
   width: 90%;
   margin-top: 2rem;
 }
+/*------------------------------------------------------------
+              NAV                                   */
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10.5% 89.5%;
+  width: 100%;
+  height: 46vh;
+  margin-top: 2rem;
+  justify-items: center;
+  align-items: end;
+}
+nav p {
+  width: 90%;
+  font-size: 1.5rem;
+}
 
+.biblioteca {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr;
+  width: 90%;
+  height: 100%;
+  background-color: #0080d5;
+  border-radius: 15px;
+}
+nav .cardJuegoBibloteca {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  width: 70%;
+  height: 100%;
+  margin-left: 14%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.cardJuegoBibloteca:hover img {
+  filter: blur(5px);
+}
+.cardJuegoBibloteca img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 25rem;
+  height: 13rem;
+}
+.recuadroNombre,
+.recuadroNombreGrande {
+  background-color: #005d9b;
+  font-family: "Baloo Chettan 2", cursive;
+  width: 100%;
+  height: 100%;
+  padding-left: 4%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.recuadroNombre {
+  color: white;
+  font-size: 1rem;
+}
+.recuadroNombreGrande {
+  color: black;
+  font-size: 1.4rem;
+  padding-top: 0%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 4px rgba(196, 196, 196, 0.25);
+}
+/*------------------------------------------------------------
+              MAIN                                   */
 .main {
   margin-bottom: 1rem;
   background-color: #0080d5;
@@ -185,8 +253,9 @@ footer .image-container2 {
 u {
   padding: 35px;
 }
-.image:first-child {
-  margin-right: auto;
+.image-container2 img:first-child {
+  width: 80%;
+  height: 80%;
 }
 
 .image {
