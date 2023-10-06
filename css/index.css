@@ -4,6 +4,7 @@
   border: 0;
   list-style: none;
   outline: none;
+  box-sizing: border-box;
 }
 body {
   background-color: #012;
@@ -16,20 +17,19 @@ html {
 }
 header,
 nav,
-.main,
-.container,
 footer {
   display: grid;
   width: 100%;
 }
 .container {
+  display: grid;
   min-height: 100vh; /* Establece una altura mínima para asegurar que la cuadrícula llene la pantalla */
   grid-template-rows: auto 1fr auto; /* Primera fila para header, segunda fila para main y tercera fila para footer */
   grid-template-columns: 1fr; /* Columnas */ /* Una columna que ocupará todo el espacio disponible */
 }
 header {
   background: #003366;
-  width: calc(100% - 4%);
+  width: calc(100%);
   height: auto; /* Cambia la altura a 'auto' para ajustarse al contenido */
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-row: 1; /* El encabezado ocupa la primera fila */
@@ -149,12 +149,64 @@ nav .cardJuegoBibloteca {
   font-size: 1.4rem;
   padding-top: 0%;
 }
-
+/*------------------------------------------------------*/
+.medium {
+  display: flex;
+  justify-content: center;
+}
 .main {
+  background-color: #0080d5;
+  border-radius: 15px;
+  width: 90%;
+  padding: 10px 40px;
+  overflow: hidden;
+}
+
+.main .swiper-main {
   width: 100%;
-  height: 80vh;
-  background-color: #012;
-  color: white;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: start;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px rgba(196, 196, 196, 0.25);
+}
+.swiper-slide:hover img {
+  filter: blur(5px);
+}
+.swiper-slide .card-tittle p {
+  font-size: 0.8rem;
+}
+.swiper-slide .card-text p {
+  font-size: 1.1rem;
+  color: black;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.main .card-descripcion {
+  padding: 0.3rem 0.5rem 0.5rem;
+  background-color: #005d9b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.main .card-descripcion .card-tittle {
+  font-size: 1rem;
+}
+.swiper-button-next {
+  right: 26px !important;
+}
+.swiper-button-prev {
+  left: 26px !important;
 }
 
 footer {
@@ -165,31 +217,4 @@ footer {
   background-color: #202020;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
-}
-.cardJuego {
-  display: flex;
-  flex-direction: column;
-  height: 14rem;
-  width: 17rem;
-}
-.cardJuego img {
-  height: 75%;
-  width: 100%;
-}
-.recuadroNombre {
-  width: calc(100% - 4%);
-  height: calc(25% - 8%);
-  padding-left: 4%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  background-color: #005d9b;
-  font-family: "Baloo Chettan 2", cursive;
-}
-.recuadroNombreChico {
-  color: white;
-  font-size: 0.8rem;
-}
-.recuadroNombreGrande {
-  color: black;
-  font-size: 1.1rem;
 }

@@ -12,17 +12,83 @@ body {
   font-family: "Baloo Chettan 2", cursive;
   color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
 }
+header {
+  display: flex;
+  align-items: center;
+  background: #003366;
+  width: calc(100%);
+  height: auto; /* Cambia la altura a 'auto' para ajustarse al contenido */
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-row: 1; /* El encabezado ocupa la primera fila */
+  margin: 0%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.svgg,
+.logoo,
+.headerDerecha {
+  height: auto;
+  width: 100%;
+}
+.menuHamburgesa {
+  width: 100%;
+  display: grid;
+  justify-content: start;
+  align-content: center;
+}
+.hamburgesa {
+  width: 6rem;
+  height: 4rem;
+}
+rect {
+  width: 100%;
+  height: 20%;
+}
+.logoo {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.logo {
+  width: 22rem;
+  height: 5rem;
+}
+.headerDerecha {
+  display: grid;
+  grid-template-columns: 5rem 5rem;
+  grid-template-rows: 1fr;
+  justify-items: end;
+  align-items: center;
+  justify-content: end;
+  align-content: center;
+}
+.user {
+  width: 100%;
+  height: 4rem;
+}
+.carrito {
+  width: 100%;
+  height: 4.5rem;
+}
+.tipoDeJuego {
+  width: 90%;
+  margin-top: 2rem;
+}
+
 .main {
+  margin-bottom: 1rem;
   background-color: #0080d5;
   border-radius: 15px;
   width: 90%;
-  padding: 10px 40px;
+  padding: 20px 20px;
   overflow: hidden;
 }
+
 .main .swiper-main {
   width: 100%;
   height: 100%;
@@ -63,9 +129,66 @@ body {
 .main .card-descripcion .card-tittle {
   font-size: 1rem;
 }
-.swiper-button-next {
+.main .swiper-button-next,
+.main .swiper-button-prev {
   right: 26px !important;
+  margin-top: 5.3rem !important;
+  top: auto !important;
 }
-.swiper-button-prev {
-  left: 26px !important;
+
+footer {
+  height: calc(100%);
+  margin-top: 1rem;
+  background-color: #003366;
+  display: grid;
+  padding: 0%;
+}
+footer .image-container2 {
+  display: grid;
+  justify-items: center;
+  height: 106%;
+}
+.image-container2 img {
+  height: 6rem;
+  width: auto;
+}
+.image-container2 {
+  width: 100%;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: auto;
+  border-bottom: 2px white solid;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 10px;
+  text-align: center;
+}
+.item {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.form input,
+.input-subscribe {
+  text-align: center;
+  border-radius: 10px;
+  height: 10px;
+  padding: 15px;
+  margin: 15px;
+}
+
+u {
+  padding: 35px;
+}
+.image:first-child {
+  margin-right: auto;
+}
+
+.image {
+  height: 150px;
 }
