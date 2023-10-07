@@ -302,3 +302,12 @@ carruseles.forEach((carrusel) => {
     },
   });
 });
+
+
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+    nav.classList.toggle("visible");
+})
