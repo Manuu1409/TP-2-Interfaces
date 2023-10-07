@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(../images/fondo.jpeg);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(15px);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -42,7 +42,7 @@ a {
 }
 
 .form input {
-  width: 300px;
+  width: 400px;
   height: 30px;
   
 }
@@ -52,8 +52,8 @@ a {
   color: #fff;
   background-color: #29ca8e;
   border-radius: 15px;
-  width: 200px;
-  height: 50px;
+  width: 400px;
+  height: 70px;
   display: block;
   margin: 0 auto;
   cursor: pointer;
@@ -61,14 +61,35 @@ a {
   place-content: center;
 }
 
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-2 {
+  height: 60px;
+  margin: 20px;
+}
+
+.image-3 {
+  height: 65px;
+}
+
+
+.captcha {
+  height: 90px;
+  width: 400px;
+  margin: 10px;
+}
+
+.container-login {
+  text-align: center;
+}
+
 .container-captcha {
   display: flex;
   justify-content: center;
-}
-
-.captcha {
-  height: 80px;
-  margin: 10px;
 }
 
 .load {
@@ -135,65 +156,59 @@ u {
 }
 
 footer {
+  height: calc(100%);
+  margin-top: 1rem;
   background-color: #003366;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  display: grid;
+  padding: 0%;
 }
-
-.password {
-  display: flex;
+footer .image-container2 {
+  display: grid;
+  justify-items: center;
+  height: 106%;
 }
-
-img {
-  padding: 5px;
+.image-container2 img {
+  height: 6rem;
+  width: auto;
 }
-
 .image-container2 {
-  display: flex;
-  justify-content: right;
-  align-items: center;
+  width: 100%;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: auto;
+  border-bottom: 2px white solid;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 
-.image:first-child {
-  margin-right: auto;
-}
-
-.image {
-  height: 150px ;
-}
-
-.container-login {
+  gap: 10px;
   text-align: center;
-  font-size:22px;
 }
-
-
-.separator2 {
-  background-color: grey;
-  height: 1px;
-  
-}
-
-.redirect {
-  color: #5263FF;
-}
-.image-container {
+.item {
   display: flex;
+  margin-top: 2rem;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  text-align: center;
+  padding: 20px;
 }
-
-.image-size {
-  width: 350px;
-  height: 50px;
-}
-
-.form input, .input-subscribe {
+.form input,
+.input-subscribe {
   text-align: center;
   border-radius: 10px;
   height: 10px;
   padding: 15px;
   margin: 15px;
-  
+}
+
+u {
+  padding: 35px;
+}
+.image-container2 img:first-child {
+  width: 80%;
+  height: 80%;
+}
+
+.image {
+  height: 150px;
 }
