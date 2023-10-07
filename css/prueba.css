@@ -178,6 +178,31 @@ nav .cardJuegoBibloteca {
 .swiper-slide .card-text p {
   font-size: 1.1rem;
   color: black;
+  width: 60%;
+}
+
+.card-text {
+  display: flex;
+}
+
+.card-text p.free:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+  color: #0f0;
+}
+.card-text p.pay:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+  color: #f33;
+}
+.card-text p span img {
+  display: flex;
+  justify-content: start;
+  width: 40px;
+  height: 26px;
+  padding-right: 10px;
 }
 .swiper-slide img {
   display: block;
