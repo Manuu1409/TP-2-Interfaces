@@ -306,8 +306,14 @@ carruseles.forEach((carrusel) => {
 
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
     nav.classList.toggle("visible");
+})
+
+const nav2 = document.querySelector("#nav_2");
+const abrir_perfil = document.querySelector("#abrir_perfil");
+
+abrir_perfil.addEventListener("click", () => {
+  nav2.classList.toggle("visible");
 })
