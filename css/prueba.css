@@ -104,16 +104,15 @@ nav p {
   background-color: #0080d5;
   border-radius: 15px;
 }
-nav .cardJuegoBibloteca {
-  display: grid;
+.biblioteca .cardJuegoBibloteca {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  width: 70%;
+  width: 100%;
   height: 100%;
-  margin-left: 14%;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
+
 .cardJuegoBibloteca:hover img {
   filter: blur(5px);
 }
@@ -121,14 +120,14 @@ nav .cardJuegoBibloteca {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 25rem;
-  height: 13rem;
+  height: 14rem;
 }
 .recuadroNombre,
 .recuadroNombreGrande {
   background-color: #005d9b;
   font-family: "Baloo Chettan 2", cursive;
-  width: 100%;
-  height: 100%;
+  width: 25rem;
+  height: 3rem;
   padding-left: 4%;
   padding-top: 4%;
   padding-bottom: 2%;
