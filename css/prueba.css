@@ -69,7 +69,7 @@ rect {
   align-content: center;
 }
 .user {
-  width: 90%;
+  width: 60%;
   height: 3rem;
 }
 .carrito {
@@ -101,17 +101,17 @@ rect {
 }
 
 .nav {
+  width: 15%;
   opacity: 0;
   visibility: hidden;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  gap: 2rem;
+  align-items: start;
   position: absolute;
   z-index: 1;
-  top: 77px;
-  left: 0;
-  bottom: 390px;
+  top: 80px;
+  left: 1px;
+  bottom: 34%;
   background-color: #001427;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   border: 1px solid white;
@@ -124,34 +124,27 @@ rect {
 }
 
 .nav-list {
+  display: flex;
   flex-direction: column;
-  align-items: end;
+  height: 100%;
   font-family: "Baloo Chettan 2", cursive;
   font-size: 1.5rem;
 }
 
-li {
-  color: #ecececec;
-  margin-bottom: 50px;
+.item-menu-hamburgesa {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  margin-top: 0rem;
 }
-
+.nav-list .item-menu-hamburgesa li {
+  color: #ecececec;
+  width: 100%;
+}
 ul {
   list-style: none;
-}
-
-.hamgurguesa {
-  width: 80px;
-  height: 85px;
-}
-
-.item-1,
-.item-2,
-.item-3,
-.item-4,
-.item-5 {
-  display: flex;
-  margin-right: 20px;
-  margin-left: 10px;
 }
 
 .svg-1,
@@ -160,7 +153,8 @@ ul {
 .svg-4,
 .svg-5 {
   height: 40px;
-  width: 40px;
+  width: 22%;
+  margin-left: 10px;
   margin-right: 10px;
 }
 /*---------------------- PERFIL*/
@@ -183,6 +177,7 @@ ul {
 }
 
 .nav-2 {
+  width: 18%;
   opacity: 0;
   visibility: hidden;
   display: flex;
@@ -191,9 +186,9 @@ ul {
   gap: 2rem;
   position: absolute;
   z-index: 1;
-  top: 77px;
+  top: 80px;
   right: 1px;
-  bottom: 325px;
+  bottom: 34%;
   background-color: #001427;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   border: 1px solid white;
@@ -207,11 +202,8 @@ ul {
 
 .name-user li {
   margin: 0;
+  margin-bottom: 10px;
   margin-left: 10px;
-}
-
-.item-3 li {
-  margin: auto;
 }
 
 .font {
@@ -230,9 +222,82 @@ ul {
   margin-left: 10px;
   margin-top: 5px;
 }
+.item-menu-user {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  margin-top: 0rem;
+}
 /*
 -----------------------------------------------------------------------------------------
+                                    JUEGO DESTACADO
 */
+
+.important-game {
+  width: 100%;
+  height: 46vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  background-color: #003366;
+}
+
+.image-important-game {
+  height: 80%;
+  width: 40%;
+}
+
+.game-details {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #005d9b;
+}
+
+.image-subimportant-game {
+  height: 100px;
+  width: 300px;
+}
+
+.title {
+  font-size: 45px;
+  color: #fff;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+.price p {
+  font-size: 1.5rem;
+  padding-right: 2%;
+  padding-left: 2%;
+  color: #f33;
+}
+.price p:first-child {
+  color: white;
+}
+.carrito-juego-destacado {
+  width: 8%;
+  height: 80%;
+}
 /*
 nav {
   display: grid;
@@ -414,7 +479,9 @@ nav p {
   color: black;
   width: 60%;
 }
-
+.card-tittle {
+  width: 50%;
+}
 .card-text {
   display: flex;
 }
@@ -431,10 +498,14 @@ nav p {
   width: 40%;
   color: #f33;
 }
-.card-text p span img {
+
+.card-text p span {
   display: flex;
-  justify-content: start;
-  width: 40px;
+  align-items: start;
+}
+
+.card-text p span .carrito-juego-carrusel {
+  width: 45px;
   height: 26px;
   padding-right: 10px;
 }
