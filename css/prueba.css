@@ -40,12 +40,14 @@ header {
   align-content: center;
 }
 .hamburgesa {
-  width: 6rem;
-  height: 4rem;
+  width: 4rem;
+  height: 2.5rem;
 }
 rect {
-  width: 100%;
-  height: 20%;
+  width: 90%;
+  height: 15%;
+  padding: 0%;
+  margin: 0%;
 }
 .logoo {
   margin: auto;
@@ -67,12 +69,12 @@ rect {
   align-content: center;
 }
 .user {
-  width: 100%;
-  height: 4rem;
+  width: 90%;
+  height: 3rem;
 }
 .carrito {
-  width: 100%;
-  height: 4.5rem;
+  width: 70%;
+  height: 3.1rem;
 }
 .tipoDeJuego {
   width: 90%;
@@ -85,7 +87,7 @@ nav {
   grid-template-columns: 1fr;
   grid-template-rows: 10.5% 89.5%;
   width: 100%;
-  height: 46vh;
+  height: 50vh;
   margin-top: 2rem;
   justify-items: center;
   align-items: end;
@@ -94,7 +96,7 @@ nav p {
   width: 90%;
   font-size: 1.5rem;
 }
-
+/*
 .biblioteca {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -119,14 +121,14 @@ nav p {
 .cardJuegoBibloteca img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  width: 25rem;
-  height: 14rem;
+  width: 29rem;
+  height: 19rem;
 }
 .recuadroNombre,
 .recuadroNombreGrande {
   background-color: #005d9b;
   font-family: "Baloo Chettan 2", cursive;
-  width: 25rem;
+  width: 29rem;
   height: 3rem;
   padding-left: 4%;
   padding-top: 4%;
@@ -144,6 +146,87 @@ nav p {
   border-bottom-right-radius: 15px;
   box-shadow: 0px 4px rgba(196, 196, 196, 0.25);
 }
+*/
+.biblioteca {
+  margin-bottom: 1rem;
+  background-color: #0080d5;
+  border-radius: 15px;
+  width: 90%;
+  padding: 20px 20px;
+  overflow: hidden;
+  z-index: 0;
+}
+.biblioteca .swiper-main {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  position: relative;
+  text-align: start;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px rgba(196, 196, 196, 0.25);
+}
+.swiper-slide:hover img {
+  filter: blur(5px);
+}
+.swiper-slide .card-tittle p {
+  font-size: 0.8rem;
+}
+.swiper-slide .card-text p {
+  font-size: 1.1rem;
+  color: black;
+  width: 60%;
+}
+
+.card-text {
+  display: flex;
+}
+
+.card-text p.free:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+  color: #0f0;
+}
+.card-text p.pay:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+  color: #f33;
+}
+.card-text p span img {
+  display: flex;
+  justify-content: start;
+  width: 40px;
+  height: 26px;
+  padding-right: 10px;
+}
+.biblioteca .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.biblioteca .card-descripcion {
+  padding: 0.3rem 0.5rem 0.5rem;
+  background-color: #005d9b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.biblioteca .card-descripcion .card-tittle {
+  font-size: 1rem;
+}
+.biblioteca .swiper-button-next,
+.biblioteca .swiper-button-prev {
+  right: 26px !important;
+  margin-top: 11rem !important;
+  top: auto !important;
+}
+
 /*------------------------------------------------------------
               MAIN                                   */
 .main {
