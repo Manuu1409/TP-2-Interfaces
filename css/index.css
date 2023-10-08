@@ -8,26 +8,16 @@
 }
 body {
   background-color: #012;
-  display: grid;
-  min-height: 100vh; /* Usa 'vh' en lugar de '%' para calcular la altura de la ventana */
-  margin: 0;
-}
-html {
-  height: 100%;
-}
-header,
-nav,
-footer {
-  display: grid;
-  width: 100%;
-}
-.container {
-  display: grid;
-  min-height: 100vh; /* Establece una altura mínima para asegurar que la cuadrícula llene la pantalla */
-  grid-template-rows: auto 1fr auto; /* Primera fila para header, segunda fila para main y tercera fila para footer */
-  grid-template-columns: 1fr; /* Columnas */ /* Una columna que ocupará todo el espacio disponible */
+  font-family: "Baloo Chettan 2", cursive;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 header {
+  display: flex;
+  align-items: center;
   background: #003366;
   width: calc(100%);
   height: auto; /* Cambia la altura a 'auto' para ajustarse al contenido */
@@ -43,14 +33,21 @@ header {
   height: auto;
   width: 100%;
 }
-
+.menuHamburgesa {
+  width: 100%;
+  display: grid;
+  justify-content: start;
+  align-content: center;
+}
 .hamburgesa {
-  width: 6rem;
-  height: 4rem;
+  width: 4rem;
+  height: 2.5rem;
 }
 rect {
-  width: 100%;
-  height: 20%;
+  width: 90%;
+  height: 15%;
+  padding: 0%;
+  margin: 0%;
 }
 .logoo {
   margin: auto;
@@ -72,65 +69,285 @@ rect {
   align-content: center;
 }
 .user {
-  width: 100%;
-  height: 4rem;
+  width: 60%;
+  height: 3rem;
 }
 .carrito {
-  width: 100%;
-  height: 4.5rem;
+  width: 70%;
+  height: 3.1rem;
 }
+.tipoDeJuego {
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+/*------------------------------------------------------------
+              NAV        
+                                         */
+.abrir-menu,
+.cerrar-menu {
+  display: block;
+  border: 0;
+  font-size: 1.25rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.abrir-menu {
+  color: #1c1c1c;
+}
+
+.cerrar-menu {
+  color: #ececec;
+}
+
+.nav {
+  width: 15%;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  left: 1px;
+  bottom: 34%;
+  background-color: #001427;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  margin-left: 1px;
+}
+
+.nav.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 1.5rem;
+}
+
+.item-menu-hamburgesa {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  margin-top: 0rem;
+}
+.nav-list .item-menu-hamburgesa li {
+  color: #ecececec;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+
+.svg-1,
+.svg-2,
+.svg-3,
+.svg-4,
+.svg-5 {
+  height: 40px;
+  width: 22%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*---------------------- PERFIL*/
+
+.abrir-perfil,
+.cerrar-perfil {
+  display: block;
+  border: 0;
+  font-size: 1.25rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.abrir-perfil {
+  color: #1c1c1c;
+}
+
+.cerrar-perfil {
+  color: #ececec;
+}
+
+.nav-2 {
+  width: 18%;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  right: 1px;
+  bottom: 34%;
+  background-color: #001427;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  margin-left: 1px;
+}
+
+.nav-2.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.name-user li {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.font {
+  font-size: large;
+}
+
+.separator {
+  background-color: grey;
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+.image-user {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.item-menu-user {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  margin-top: 0rem;
+}
+/*
+-----------------------------------------------------------------------------------------
+                                    JUEGO DESTACADO
+*/
+
+.important-game {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  background-color: #003366;
+}
+
+.image-important-game {
+  height: 80%;
+  width: 40%;
+}
+
+.game-details {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #005d9b;
+}
+
+.image-subimportant-game {
+  height: 100px;
+  width: 300px;
+}
+
+.title {
+  font-size: 45px;
+  color: #fff;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+.price p {
+  font-size: 1.5rem;
+  padding-right: 2%;
+  padding-left: 2%;
+  color: #f33;
+}
+.price p:first-child {
+  color: white;
+}
+.carrito-juego-destacado {
+  width: 8%;
+  height: 80%;
+}
+/*
 nav {
-  grid-row: 2; /* El nav ocupa la segunda fila */
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 10.5% 89.5%;
   width: 100%;
-  height: 46vh;
+  height: 50vh;
   margin-top: 2rem;
   justify-items: center;
   align-items: end;
-  justify-content: end;
 }
 nav p {
-  justify-items: start;
-  align-items: start;
-  justify-content: start;
-  padding-bottom: 0.5%;
-}
-p {
-  color: white;
-  font-family: "Baloo Chettan 2", cursive;
-  font-size: 1.5rem;
   width: 90%;
+  font-size: 1.5rem;
 }
-*/ .biblioteca {
+
+.biblioteca {
   display: grid;
-  grid-template-columns: 25rem 25rem 25rem;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 1fr;
   width: 90%;
   height: 100%;
   background-color: #0080d5;
+  border-radius: 15px;
 }
-nav .cardJuegoBibloteca {
-  display: grid;
+.biblioteca .cardJuegoBibloteca {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  width: calc(100% - 14%);
-  height: calc(100% - 10%);
-  margin-left: 14%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  width: 100%;
+  height: 100%;
 }
 
+.cardJuegoBibloteca:hover img {
+  filter: blur(5px);
+}
 .cardJuegoBibloteca img {
-  width: 100%;
-  height: 14rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 29rem;
+  height: 19rem;
 }
 .recuadroNombre,
 .recuadroNombreGrande {
   background-color: #005d9b;
   font-family: "Baloo Chettan 2", cursive;
-  width: calc(100% - 4%);
-  height: calc(100% - 4%);
+  width: 29rem;
+  height: 3rem;
   padding-left: 4%;
   padding-top: 4%;
   padding-bottom: 2%;
@@ -143,18 +360,62 @@ nav .cardJuegoBibloteca {
   color: black;
   font-size: 1.4rem;
   padding-top: 0%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 4px rgba(196, 196, 196, 0.25);
 }
-/*------------------------------------------------------*/
-.medium {
-  display: flex;
-  justify-content: center;
-}
-.main {
+*/
+/*                         BIBLOTECA    
+ */
+
+.biblioteca {
+  margin-bottom: 1rem;
   background-color: #0080d5;
   border-radius: 15px;
   width: 90%;
-  padding: 10px 40px;
+  padding: 20px 20px;
   overflow: hidden;
+  z-index: 0;
+}
+.biblioteca .swiper-main {
+  width: 100%;
+  height: 100%;
+}
+.biblioteca .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.biblioteca .card-descripcion {
+  padding: 0.3rem 0.5rem 0.5rem;
+  background-color: #005d9b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.biblioteca .card-descripcion .card-tittle {
+  font-size: 1rem;
+}
+.biblioteca .swiper-button-next,
+.biblioteca .swiper-button-prev {
+  right: 26px !important;
+  margin-top: 11rem !important;
+  top: auto !important;
+}
+
+/*------------------------------------------------------------
+              MAIN                                   */
+.main {
+  margin-bottom: 1rem;
+  background-color: #0080d5;
+  border-radius: 15px;
+  width: 90%;
+  padding: 20px 20px;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .main .swiper-main {
@@ -178,6 +439,37 @@ nav .cardJuegoBibloteca {
 .swiper-slide .card-text p {
   font-size: 1.1rem;
   color: black;
+  width: 60%;
+}
+.card-tittle {
+  width: 50%;
+}
+.card-text {
+  display: flex;
+}
+
+.card-text p.free:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+  color: #0f0;
+}
+.card-text p.pay:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+  color: #f33;
+}
+
+.card-text p span {
+  display: flex;
+  align-items: start;
+}
+
+.card-text p span .carrito-juego-carrusel {
+  width: 45px;
+  height: 26px;
+  padding-right: 10px;
 }
 .swiper-slide img {
   display: block;
@@ -197,19 +489,128 @@ nav .cardJuegoBibloteca {
 .main .card-descripcion .card-tittle {
   font-size: 1rem;
 }
-.swiper-button-next {
+.main .swiper-button-next,
+.main .swiper-button-prev {
   right: 26px !important;
+  margin-top: 5.3rem !important;
+  top: auto !important;
 }
-.swiper-button-prev {
-  left: 26px !important;
+/*
+              ULTIMOS LANZAMIENTOS
+*/
+
+.ultimosLanzamientos {
+  margin-bottom: 1rem;
+  background-color: #0080d5;
+  border-radius: 15px;
+  width: 90%;
+  padding: 20px 20px;
+  overflow: hidden;
+  z-index: 0;
+}
+.ultimosLanzamientos .swiper-main {
+  width: 100%;
+  height: 100%;
+}
+.ultimosLanzamientos .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.ultimosLanzamientos .card-descripcion {
+  padding: 0.3rem 0.5rem 0.5rem;
+  background-color: #005d9b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
+.ultimosLanzamientos .card-descripcion .card-tittle {
+  font-size: 1rem;
+}
+.ultimosLanzamientos .swiper-button-next,
+.ultimosLanzamientos .swiper-button-prev {
+  right: 26px !important;
+  margin-top: 11rem !important;
+  top: auto !important;
+}
+
+/* ********************************--------------------------------------------------*/
 footer {
-  grid-row: auto;
+  height: calc(100%);
+  margin-top: 2rem;
+  background-color: #003366;
+  display: grid;
+  padding: 0%;
   width: 100%;
+  justify-items: center;
+}
+footer .image-container2 {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 106%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.image-container2 img {
+  height: 6rem;
+  width: 40%;
+}
+.image-container2 {
+  width: 100%;
+  grid-template-columns: 25% 25% 25% 25%;
   height: auto;
-  grid-template-columns: 1fr;
-  background-color: #202020;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border-bottom: 2px white solid;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 10px;
+  text-align: center;
+}
+.item {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.form input,
+.input-subscribe {
+  text-align: center;
+  border-radius: 10px;
+  height: 10px;
+  padding: 15px;
+  margin: 15px;
+}
+
+u {
+  padding: 35px;
+}
+.image-container2 img:first-child {
+  width: 90%;
+  height: 80%;
+}
+.footer-copyright-redes {
+  display: flex;
+  justify-content: start;
+  width: 90%;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 2px solid white;
+}
+.footer-copyright-redes p {
+  width: 100%;
+}
+.footer-copyright-redes svg {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  width: 5%;
 }
