@@ -81,7 +81,159 @@ rect {
   margin-top: 2rem;
 }
 /*------------------------------------------------------------
-              NAV                                   */
+              NAV        
+                                         */
+.abrir-menu,
+.cerrar-menu {
+  display: block;
+  border: 0;
+  font-size: 1.25rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.abrir-menu {
+  color: #1c1c1c;
+}
+
+.cerrar-menu {
+  color: #ececec;
+}
+
+.nav {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+  position: absolute;
+  z-index: 1;
+  top: 77px;
+  left: 0;
+  bottom: 390px;
+  background-color: #001427;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  margin-left: 1px;
+}
+
+.nav.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-list {
+  flex-direction: column;
+  align-items: end;
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 1.5rem;
+}
+
+li {
+  color: #ecececec;
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+.hamgurguesa {
+  width: 80px;
+  height: 85px;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.svg-1,
+.svg-2,
+.svg-3,
+.svg-4,
+.svg-5 {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+/*---------------------- PERFIL*/
+
+.abrir-perfil,
+.cerrar-perfil {
+  display: block;
+  border: 0;
+  font-size: 1.25rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.abrir-perfil {
+  color: #1c1c1c;
+}
+
+.cerrar-perfil {
+  color: #ececec;
+}
+
+.nav-2 {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+  position: absolute;
+  z-index: 1;
+  top: 77px;
+  right: 1px;
+  bottom: 325px;
+  background-color: #001427;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  margin-left: 1px;
+}
+
+.nav-2.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.name-user li {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.item-3 li {
+  margin: auto;
+}
+
+.font {
+  font-size: large;
+}
+
+.separator {
+  background-color: grey;
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+.image-user {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+/*
+-----------------------------------------------------------------------------------------
+*/
+/*
 nav {
   display: grid;
   grid-template-columns: 1fr;
@@ -96,7 +248,7 @@ nav p {
   width: 90%;
   font-size: 1.5rem;
 }
-/*
+
 .biblioteca {
   display: grid;
   grid-template-columns: auto auto auto;
