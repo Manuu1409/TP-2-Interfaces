@@ -243,6 +243,7 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .content {
@@ -299,6 +300,9 @@ ul {
 .carrito-juego-destacado {
   width: 10%;
   height: 80%;
+}
+.carrito-juego-destacado path {
+  transform: scale(0.7);
 }
 /*
 nav {
@@ -570,7 +574,7 @@ footer .image-container2 {
 }
 .image-container2 img {
   height: 6rem;
-  width: 60%;
+  width: 50%;
 }
 .image-container2 {
   width: 100%;
@@ -823,94 +827,97 @@ button span {
   .carrito-juego-destacado {
     width: 40%;
   }
-  @media (min-width: 300px) and (max-width: 800px) {
-    .nav {
-      width: 30%;
-    }
-    .nav-2 {
-      width: 40%;
-    }
-    .ultimosLanzamientos .swiper-button-next {
-      right: 0.3rem !important;
-    }
-    .ultimosLanzamientos .swiper-button-prev {
-      left: 0.3rem;
-    }
-    .main .swiper-button-next {
-      right: 0.3rem !important;
-    }
-    .main .swiper-button-prev {
-      left: 0.3rem;
-    }
-    .biblioteca .swiper-button-next {
-      right: 0.3rem !important;
-    }
-    .biblioteca .swiper-button-prev {
-      left: 0.3rem;
-    }
-    .item {
-      padding: 0px;
-    }
-    .item p {
-      font-size: 13px;
-    }
-    .item:nth-child(5) {
-      margin-bottom: 1rem;
-    }
-    .image-container2 img:first-child {
-      width: 90%;
-      height: 4rem;
-    }
-    .image-container2 img {
-      height: 5rem;
-      width: 70%;
-    }
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .nav {
+    width: 30%;
   }
-  @media (min-width: 300px) and (max-width: 720px) {
-    .carrito-juego-destacado {
-      width: 50%;
-    }
-    .nav {
-      width: 34%;
-    }
+  .nav-2 {
+    width: 40%;
   }
-  @media (min-width: 300px) and (max-width: 670px) {
-    .important-game {
-      width: 100%;
-      height: 40vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .carrito-juego-destacado {
-      width: 20%;
-      height: 100%;
-      transform: scale(0.7);
-    }
-
-.price p {
-      font-size: 1.3rem;
-      padding-right: 2%;
-      padding-left: 2%;
-      width: 22%;
-    }
-    .swiper-slide img {
-      height: 120px;
-    }
-    .biblioteca .swiper-slide img {
-      height: 180px;
-    }
-    .ultimosLanzamientos .swiper-slide img {
-      height: 220px;
-    }
-    .ultimosLanzamientos .swiper-button-next {
-      margin-top: 8rem !important;
-      right: 0.1rem;
-    }
-    .ultimosLanzamientos .swiper-button-prev {
-      margin-top: 8rem !important;
-      left: 0.1rem;
+  .ultimosLanzamientos .swiper-button-next {
+    right: 0.3rem !important;
+  }
+  .ultimosLanzamientos .swiper-button-prev {
+    left: 0.3rem;
+  }
+  .main .swiper-button-next {
+    right: 0.3rem !important;
+  }
+  .main .swiper-button-prev {
+    left: 0.3rem;
+  }
+  .biblioteca .swiper-button-next {
+    right: 0.3rem !important;
+  }
+  .biblioteca .swiper-button-prev {
+    left: 0.3rem;
+  }
+  .item {
+    padding: 0px;
+  }
+  .item p {
+    font-size: 13px;
+  }
+  .item:nth-child(5) {
+    margin-bottom: 1rem;
+  }
+  .image-container2 img:first-child {
+    width: 90%;
+    height: 4rem;
+  }
+  .image-container2 img {
+    height: 5rem;
+    width: 70%;
+  }
+}
+@media (min-width: 300px) and (max-width: 720px) {
+  .carrito-juego-destacado {
+    width: 50%;
+  }
+  .nav {
+    width: 34%;
+  }
+}
+@media (min-width: 300px) and (max-width: 670px) {
+  .important-game {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .carrito-juego-destacado {
+    width: 15%;
+    height: 100%;
+    overflow: visible;
+  }
+  .carrito-juego-destacado path {
+    transform: scale(0.5);
+  }
+  .price p {
+    font-size: 1.3rem;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 22%;
+  }
+  .swiper-slide img {
+    height: 120px;
+  }
+  .biblioteca .swiper-slide img {
+    height: 180px;
+  }
+  .ultimosLanzamientos .swiper-slide img {
+    height: 220px;
+  }
+  .ultimosLanzamientos .swiper-button-next {
+    margin-top: 8rem !important;
+    right: 0.1rem;
+  }
+  .ultimosLanzamientos .swiper-button-prev {
+    margin-top: 8rem !important;
+    left: 0.1rem;
   }
   .biblioteca .swiper-button-next {
     margin-top: 6rem !important;
@@ -928,6 +935,219 @@ button span {
     margin-top: 4rem !important;
     left: 0.1rem;
   }
-  @media (min-width: 300px) and (max-width: 630px) {
+  .headerDerecha {
+    justify-items: end;
+    align-items: center;
+    justify-content: end;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .carrito,
+  .user {
+    transform: scale(0.7);
+    width: 64%;
+  }
+  .logo {
+    width: 15rem;
+    height: 3.5rem;
+  }
+  .hamburgesa {
+    transform: scale(0.7);
+  }
+  header {
+    height: 5rem;
+  }
+  .tipoDeJuego {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .price p {
+    font-size: 17px;
+  }
+}
+@media (min-width: 300px) and (max-width: 630px) {
+  .item b {
+    font-size: 14px;
+  }
+  .item p {
+    font-size: 11px;
+  }
+  .item button {
+    width: 7rem;
+    height: 2rem;
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 1rem;
+  }
+  footer .image-container2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .image-container2 img {
+    align-content: center;
+    align-items: center;
+    height: 3rem;
+  }
+  .image-container2 img:first-child {
+    justify-content: center;
+    width: 90%;
+    height: 3rem;
+  }
+  .nav {
+    width: 30%;
+  }
+  .nav-2 {
+    width: 35%;
+  }
+  .nav-list li {
+    font-size: 16px;
+  }
+  .nav-list .item-menu-hamburgesa li {
+    width: 40%;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    transform: scale(0.8) !important;
+  }
+  .main .swiper-button-next {
+    right: 0rem;
+  }
+  .main .swiper-button-prev {
+    left: 0rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 550px) {
+  .price {
+    justify-content: end;
+  }
+  .price p {
+    width: auto;
+  }
+  .carrito-juego-destacado {
+    width: 15%;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 10px;
+  }
+  .carrito-juego-destacado path {
+    transform: scale(0.4);
+  }
+}
+@media (min-width: 300px) and (max-width: 515px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-copyright-redes:first-child {
+    justify-content: start;
+    justify-items: start;
+  }
+
+  .footer-copyright-redes p {
+    width: 50%;
+    font-size: 12px;
+  }
+  .redes {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    justify-items: end;
+  }
+  .footer-copyright-redes .redes svg {
+    width: 14%;
+  }
+  .headerDerecha {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    overflow: visible; /* Agrega esto */
+  }
+}
+@media (min-width: 300px) and (max-width: 475px) {
+  .headerDerecha svg {
+    margin-top: 10px;
+    width: 30%;
+    overflow: visible; /* Agrega esto */
+  }
+
+  .headerDerecha svg path {
+    transform: scale(0.6);
+  }
+}
+@media (min-width: 300px) and (max-width: 471px) {
+  .logo {
+    width: 10rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 445px) {
+  .carrito-juego-destacado {
+    width: 17%;
+  }
+  .main {
+    width: 80%;
+  }
+  .ultimosLanzamientos {
+    width: 80%;
+  }
+  .tipoDeJuego {
+    width: 80%;
+  }
+  .biblioteca {
+    width: 80%;
+  }
+  .content {
+    width: 80%;
+  }
+  .price p {
+    font-size: 14px;
+  }
+  footer .image-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-items: center;
+    align-content: center;
+    height: 106%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .image-container2 img:first-child {
+    justify-content: center;
+    width: 80%;
+    height: 3rem;
+    margin-bottom: 10px;
+  }
+  .image-container2 img:nth-child(2) {
+    margin-bottom: 10px;
+  }
+
+  .image-container2 img {
+    height: 4rem;
+  }
+  .logoo {
+    width: auto;
+  }
+  .headerDerecha {
+    width: 70%;
+  }
+  .menuHamburgesa {
+    width: 70%;
+  }
+}
+@media (min-width: 300px) and (max-width: 445px) {
+  .price p:first-child {
+    display: none;
+  }
+  .carrito-juego-destacado {
+    width: 25%;
+  }
+}
+@media (min-width: 300px) and (max-width: 413px) {
+  .headerDerecha .carrito,
+  .headerDerecha .user {
+    width: 36%;
   }
 }
