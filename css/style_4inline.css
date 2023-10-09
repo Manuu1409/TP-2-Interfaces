@@ -58,7 +58,9 @@ rect {
 .logo {
   width: 22rem;
   height: 5rem;
+
 }
+
 .headerDerecha {
   display: grid;
   grid-template-columns: 5rem 5rem;
@@ -72,6 +74,7 @@ rect {
   width: 60%;
   height: 3rem;
 }
+
 .carrito {
   width: 70%;
   height: 3.1rem;
@@ -81,6 +84,28 @@ rect {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
+
+.user, .logo, .hamburgesa {
+  transition: transform 0.3s;
+
+}
+
+.user:hover, .logo:hover,  .hamburgesa:hover {
+  transform: scale(1.1);
+  
+}
+
+.item-menu-user li, .item-menu-hamburgesa li{
+  transition: color 0.3;
+}
+
+.item-menu-user li:hover, .item-menu-hamburgesa li:hover {
+  color: #005374;
+}
+
+
+
 /*------------------------------------------------------------
               NAV        
                                          */
@@ -138,7 +163,9 @@ rect {
   width: 100%;
   height: 20%;
   margin-top: 0rem;
+  transition: color 0.3;
 }
+
 .nav-list .item-menu-hamburgesa li {
   color: #ecececec;
   width: 100%;
@@ -232,17 +259,23 @@ ul {
 }
   
   
-  .breadcrumbs {
-    background-color: #001C40;
-    width: 21%;
+  .breadcrumbs  {
+    background-color: #002350;
+    width: 350px;
+    height: 35px;
     margin: 20px 20px 20px 55px;
     border-radius: 15px;
-    
   }
 
-  a {
+  .breadcrumbs a {
     color: white;
+    transition: color 0.3;
   }
+
+  .breadcrumbs a:hover {
+    color: #FF6666;
+  }
+  
 
   h1 {
     text-align: center;
@@ -268,12 +301,18 @@ ul {
   display: flex;
 }
 
+.image-share {
+  height: 60px;
+  width: 60px;
+  fill: none;
+
+}
+
 
 
 .share {
   margin-left: 170px;
   
-    
 } 
 
 
@@ -417,7 +456,7 @@ u {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 .publish {
