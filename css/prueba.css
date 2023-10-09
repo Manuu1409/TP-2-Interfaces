@@ -291,12 +291,13 @@ ul {
   padding-right: 2%;
   padding-left: 2%;
   color: #f33;
+  width: 22%;
 }
 .price p:first-child {
   color: white;
 }
 .carrito-juego-destacado {
-  width: 8%;
+  width: 10%;
   height: 80%;
 }
 /*
@@ -399,13 +400,16 @@ nav p {
 .biblioteca .card-descripcion .card-tittle {
   font-size: 1rem;
 }
-.biblioteca .swiper-button-next,
-.biblioteca .swiper-button-prev {
+.biblioteca .swiper-button-next {
   right: 26px !important;
-  margin-top: 11rem !important;
+  margin-top: 9.4rem !important;
   top: auto !important;
 }
-
+.biblioteca .swiper-button-prev {
+  left: 26px;
+  margin-top: 9.4rem !important;
+  top: auto !important;
+}
 /*------------------------------------------------------------
               MAIN                                   */
 .main {
@@ -489,9 +493,14 @@ nav p {
 .main .card-descripcion .card-tittle {
   font-size: 1rem;
 }
-.main .swiper-button-next,
-.main .swiper-button-prev {
+
+.main .swiper-button-next {
   right: 26px !important;
+  margin-top: 5.3rem !important;
+  top: auto !important;
+}
+.main .swiper-button-prev {
+  left: 26px;
   margin-top: 5.3rem !important;
   top: auto !important;
 }
@@ -530,13 +539,17 @@ nav p {
 .ultimosLanzamientos .card-descripcion .card-tittle {
   font-size: 1rem;
 }
-.ultimosLanzamientos .swiper-button-next,
-.ultimosLanzamientos .swiper-button-prev {
+
+.ultimosLanzamientos .swiper-button-next {
   right: 26px !important;
-  margin-top: 11rem !important;
+  margin-top: 16rem !important;
   top: auto !important;
 }
-
+.ultimosLanzamientos .swiper-button-prev {
+  left: 26px;
+  margin-top: 16rem !important;
+  top: auto !important;
+}
 /* ********************************--------------------------------------------------*/
 footer {
   height: calc(100%);
@@ -557,7 +570,7 @@ footer .image-container2 {
 }
 .image-container2 img {
   height: 6rem;
-  width: 40%;
+  width: 60%;
 }
 .image-container2 {
   width: 100%;
@@ -568,8 +581,6 @@ footer .image-container2 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
-  gap: 10px;
   text-align: center;
 }
 .item {
@@ -589,12 +600,12 @@ footer .image-container2 {
   margin: 15px;
 }
 
-u {
-  padding: 35px;
+b {
+  padding-bottom: 20px;
 }
 .image-container2 img:first-child {
   width: 90%;
-  height: 80%;
+  height: 90%;
 }
 .footer-copyright-redes {
   display: flex;
@@ -613,4 +624,310 @@ u {
   justify-content: end;
   align-content: center;
   width: 5%;
+}
+
+button {
+  border: 0;
+  background-image: linear-gradient(150deg, #004400, #116611, #55aa55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  font-size: 20px;
+  padding: 3px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  animation-name: animationButton; /* Nombre de la animación */
+  animation-duration: 4s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-in-out; /* Función de temporización (puedes ajustarla según tus preferencias) */
+  animation-iteration-count: calc(1); /* Repetir la animación infinitamente */
+}
+button span {
+  padding: 10px 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+@keyframes animationButton {
+  0% {
+    transform: rotate(0turn);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1342px) {
+  .nav-2 {
+    width: 20%;
+  }
+  .nav {
+    width: 20%;
+  }
+  .important-game {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    background-color: #003366;
+  }
+
+  .image-important-game {
+    height: 80%;
+    width: 40%;
+  }
+
+  .game-details {
+    height: 80%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 75% 15%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #005d9b;
+  }
+  .mini-image {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .image-subimportant-game {
+    height: 90%;
+    width: 95%;
+  }
+
+  .title {
+    font-size: 200%;
+    color: #fff;
+    height: auto;
+  }
+
+  .price {
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .price p {
+    display: flex;
+    justify-content: start;
+    font-size: 1.5rem;
+    padding-right: 2%;
+    padding-left: 2%;
+    color: #f33;
+    width: 100%;
+  }
+  .price p:first-child {
+    display: flex;
+    justify-content: end;
+  }
+  .price p:first-child {
+    color: white;
+  }
+  .carrito-juego-destacado {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 30%;
+    height: 88%; /* Esto asegura que ocupe toda la altura del contenedor */
+  }
+}
+@media (min-width: 300px) and (max-width: 1184px) {
+  .nav {
+    width: 23%;
+  }
+  .nav-2 {
+    width: 25%;
+  }
+  .ultimosLanzamientos .swiper-button-next {
+    right: 1rem !important;
+  }
+  .ultimosLanzamientos .swiper-button-prev {
+    left: 1rem;
+  }
+  .main .swiper-button-next {
+    right: 1rem !important;
+  }
+  .main .swiper-button-prev {
+    left: 1rem;
+  }
+  .biblioteca .swiper-button-next {
+    right: 1rem !important;
+  }
+  .biblioteca .swiper-button-prev {
+    left: 1rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 942px) {
+  .nav {
+    width: 27%;
+  }
+  .nav-2 {
+    width: 27%;
+  }
+
+  .game-details {
+    height: 80%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 65% 15%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #005d9b;
+  }
+  .mini-image {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .image-subimportant-game {
+    height: 100%;
+    width: 95%;
+  }
+  .carrito-juego-destacado {
+    width: 40%;
+  }
+  @media (min-width: 300px) and (max-width: 800px) {
+    .nav {
+      width: 30%;
+    }
+    .nav-2 {
+      width: 40%;
+    }
+    .ultimosLanzamientos .swiper-button-next {
+      right: 0.3rem !important;
+    }
+    .ultimosLanzamientos .swiper-button-prev {
+      left: 0.3rem;
+    }
+    .main .swiper-button-next {
+      right: 0.3rem !important;
+    }
+    .main .swiper-button-prev {
+      left: 0.3rem;
+    }
+    .biblioteca .swiper-button-next {
+      right: 0.3rem !important;
+    }
+    .biblioteca .swiper-button-prev {
+      left: 0.3rem;
+    }
+    .item {
+      padding: 0px;
+    }
+    .item p {
+      font-size: 13px;
+    }
+    .item:nth-child(5) {
+      margin-bottom: 1rem;
+    }
+    .image-container2 img:first-child {
+      width: 90%;
+      height: 4rem;
+    }
+    .image-container2 img {
+      height: 5rem;
+      width: 70%;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 720px) {
+    .carrito-juego-destacado {
+      width: 50%;
+    }
+    .nav {
+      width: 34%;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 670px) {
+    .important-game {
+      width: 100%;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .carrito-juego-destacado {
+      width: 20%;
+      height: 100%;
+      transform: scale(0.7);
+    }
+
+.price p {
+      font-size: 1.3rem;
+      padding-right: 2%;
+      padding-left: 2%;
+      width: 22%;
+    }
+    .swiper-slide img {
+      height: 120px;
+    }
+    .biblioteca .swiper-slide img {
+      height: 180px;
+    }
+    .ultimosLanzamientos .swiper-slide img {
+      height: 220px;
+    }
+    .ultimosLanzamientos .swiper-button-next {
+      margin-top: 8rem !important;
+      right: 0.1rem;
+    }
+    .ultimosLanzamientos .swiper-button-prev {
+      margin-top: 8rem !important;
+      left: 0.1rem;
+  }
+  .biblioteca .swiper-button-next {
+    margin-top: 6rem !important;
+    right: 0.1rem;
+  }
+  .biblioteca .swiper-button-prev {
+    margin-top: 6rem !important;
+    left: 0.1rem;
+  }
+  .main .swiper-button-next {
+    margin-top: 4rem !important;
+    right: 0.1rem;
+  }
+  .main .swiper-button-prev {
+    margin-top: 4rem !important;
+    left: 0.1rem;
+  }
+  @media (min-width: 300px) and (max-width: 630px) {
+  }
 }
