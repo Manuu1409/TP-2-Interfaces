@@ -1039,6 +1039,12 @@ button span {
   }
 }
 @media (min-width: 300px) and (max-width: 515px) {
+  .nav {
+    width: 40%;
+  }
+  .nav-2 {
+    width: 40%;
+  }
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1149,5 +1155,11 @@ button span {
   .headerDerecha .carrito,
   .headerDerecha .user {
     width: 36%;
+  }
+  .nav {
+    width: 45%;
+  }
+  .nav-2 {
+    width: 45%;
   }
 }
