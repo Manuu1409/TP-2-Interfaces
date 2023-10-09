@@ -611,6 +611,15 @@ b {
   width: 90%;
   height: 90%;
 }
+.redes {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  justify-items: end;
+}
+.footer-copyright-redes .redes svg {
+  width: 14%;
+}
 .footer-copyright-redes {
   display: flex;
   justify-content: start;
