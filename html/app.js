@@ -2,10 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const log_in = document.querySelector(".registerButton");
 
   log_in.onclick = function () {
-    this.innerHTML = "Cuenta Creada";
     this.classList.add("cuenta-creada");
     setTimeout(() => {
-      this.innerHTML = "<div class='load'></div>";
+      this.innerHTML = "<div class='load '></div>";
       setTimeout(() => {
         window.location.href = "index.html";
       }, 5000);
@@ -33,3 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+const fillButton = document.querySelector(".fill-button");
+
+fillButton.addEventListener("click", () => {
+  fillButton.classList.add("clicked");
+});
