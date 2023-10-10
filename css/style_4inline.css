@@ -10,7 +10,8 @@ body {
   background-color: #012;
   font-family: "Baloo Chettan 2", cursive;
   color: white;
-  
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
@@ -58,7 +59,6 @@ rect {
 .logo {
   width: 22rem;
   height: 5rem;
-
 }
 
 .headerDerecha {
@@ -85,26 +85,29 @@ rect {
   margin-bottom: 1rem;
 }
 
-
-.user, .logo, .hamburgesa {
+.user,
+.logo,
+.carrito,
+.hamburgesa {
   transition: transform 0.3s;
-
 }
 
-.user:hover, .logo:hover,  .hamburgesa:hover {
+.user:hover,
+.logo:hover,
+.carrito:hover,
+.hamburgesa:hover {
   transform: scale(1.1);
-  
 }
 
-.item-menu-user li, .item-menu-hamburgesa li{
+.item-menu-user li,
+.item-menu-hamburgesa li {
   transition: color 0.3;
 }
 
-.item-menu-user li:hover, .item-menu-hamburgesa li:hover {
+.item-menu-user li:hover,
+.item-menu-hamburgesa li:hover {
   color: #005374;
 }
-
-
 
 /*------------------------------------------------------------
               NAV        
@@ -257,190 +260,139 @@ ul {
   height: 20%;
   margin-top: 0rem;
 }
-  
-  
-  .breadcrumbs  {
-    background-color: #002350;
-    width: 310px;
-    height: 30px;
-    margin: 20px 20px 20px 55px;
-    border-radius: 15px;
-  }
 
-  .breadcrumbs a {
-    color: white;
-    transition: color 0.3;
-  }
+.breadcrumbs {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  width: 90%;
+  height: 3rem;
+  border-bottom: 2px white solid;
+}
+.breadcrumbs h3 {
+  display: flex;
+  justify-content: center;
+  background-color: #002350;
+  width: auto;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
 
-  .breadcrumbs a:hover {
-    color: #FF6666;
-  }
-  
+.breadcrumbs a {
+  color: white;
+  transition: color 0.3;
+  padding: 4px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-  h1 {
-    text-align: center;
-    margin-top: 25px;
-  }
-
-
-  
-  
-  .container {
-    display: flex;
-    background-color: #003950;
-  }
-  
-  .container img {
-    height: 400px;
-    margin-left: 50px;
-    border: 1px solid white
-  }
+.breadcrumbs a:hover {
+  color: #ff6666;
+}
 
 .title {
-  margin-left: 50px;
   display: flex;
+  justify-content: start;
+  justify-items: start;
+  align-content: start;
+  align-items: start;
+  width: 90%;
+  margin-top: 2rem;
 }
-
+.title h1 {
+  width: 65%;
+}
 .image-share {
-  height: 60px;
-  width: 60px;
   fill: none;
-
+  height: 70px;
+}
+.image-share {
+}
+.container {
+  display: flex;
+  background-color: #003950;
+  width: 90%;
 }
 
-
-
-.share {
-  margin-left: 170px;
-  
-} 
-
-
-.position-description {
- height: 90px;
- margin-left: 30px;
- margin-right: 30px;
+.container img {
+  width: 70%;
+  border: 1px solid white;
 }
 
 .text {
-  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  width: 30%;
+}
+.text .text-h2 {
+  margin-top: 1rem;
+}
+.text .text-p {
+  text-align: center;
+  width: 80%;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
 
-.controls {
-  margin-top: 70px;
+.controls p:nth-child(2) {
+  margin-top: 1rem;
 }
-  
-  .container p,
-  .container h2 {
-    margin-left: 45px;
-  }
-  
-  .container h2,
-  .container p {
-    margin-bottom: 10px;
-  }
-  
-  .description{
+.controls p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.position-description {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   background-color: #003950;
+  height: 15rem;
+  width: 90%;
 }
-
-.separator {
-  background-color: grey;
-  height: 1px;
+.position-description h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.position-description p {
+  margin-top: 1rem;
+  width: 80%;
+  font-size: 1.4rem;
 }
 
 .background {
-  background-color:#001427;
+  background-color: #001427;
 }
 
-
-
- /* FOOTER */
-footer {
-  height: calc(100%);
-  margin-top: 2rem;
-  background-color: #003366;
-  display: grid;
-  padding: 0%;
-  width: 100%;
-  justify-items: center;
-}
-footer .image-container2 {
-  display: grid;
-  justify-items: center;
-  align-content: center;
-  height: 106%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.image-container2 img {
-  height: 6rem;
-  width: 40%;
-}
-.image-container2 {
-  width: 100%;
-  grid-template-columns: 25% 25% 25% 25%;
-  height: auto;
-  border-bottom: 2px white solid;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-
-  gap: 10px;
-  text-align: center;
-}
-.item {
+.parte-superior-reseña {
+  margin-top: 3rem;
   display: flex;
-  margin-top: 2rem;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-.form input,
-.input-subscribe {
-  text-align: center;
-  border-radius: 10px;
-  height: 10px;
-  padding: 15px;
-  margin: 15px;
-}
-
-u {
-  padding: 35px;
-}
-.image-container2 img:first-child {
-  width: 90%;
-  height: 80%;
-}
-.footer-copyright-redes {
-  display: flex;
-  justify-content: start;
-  width: 90%;
-  height: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-top: 2px solid white;
-}
-.footer-copyright-redes p {
-  width: 100%;
-}
-.footer-copyright-redes svg {
-  display: flex;
-  justify-content: end;
   align-content: center;
-  width: 5%;
+  width: 90%;
+  height: 100px;
 }
-
-
-
-
-
-
-
-
+.titulo-reseña {
+  margin-left: 2rem;
+}
 
 u {
   padding: 35px;
@@ -450,7 +402,6 @@ u {
   background-color: grey;
   height: 1px;
   margin: 10;
-  
 }
 
 .container-publish {
@@ -483,31 +434,28 @@ u {
 
 .info {
   display: flex;
+  justify-content: start;
+  width: 100%;
 }
 
 .reading {
   display: flex;
+  justify-content: center;
   background-color: #003950;
   width: 1000px;
   height: 250px;
-  padding: 20px;
 }
 
 .comments {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 100px;
   width: 800px;
-  margin: 5px;
-  
-  
 }
 
- input.comments::placeholder {
+input.comments::placeholder {
   line-height: 50px;
   padding-top: 90%; /* Ajusta el valor según sea necesario */
 }
-
-
 
 .text2 {
   color: black;
@@ -516,12 +464,11 @@ u {
 
 .btn-publish {
   margin-left: 560px;
-  background-color: #FF6666;
+  background-color: #ff6666;
   width: 90px;
   height: 40px;
   border-radius: 15px;
   color: white;
-  
 }
 
 .info-row {
@@ -533,15 +480,18 @@ u {
   margin-left: 210px;
 }
 
-.thumbs-down , .thumbs-up{
+.thumbs-down,
+.thumbs-up {
   width: 50px;
   height: 50px;
   margin-right: 15px;
 }
 
-.time-published{
-  text-align: center;
-  
+.time-published {
+  width: 100%;
+}
+.time-published p {
+  width: 100%;
 }
 
 .question {
@@ -554,4 +504,183 @@ u {
 
 .position {
   margin-left: 110px;
+}
+/*--------------------------------------
+comentario*/
+
+.container-publish-2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.reading-2 {
+  display: flex;
+  background-color: #003950;
+  width: 1000px;
+}
+.info-2 {
+  display: flex;
+  padding: 20px;
+}
+
+.image-2 {
+  width: 80px;
+  height: 80px;
+}
+
+.info-row-2,
+.number-reseñas {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.info-row-2 p,
+.number-reseñas p {
+  text-align: center;
+  width: auto;
+  margin-left: 2rem;
+}
+.recommended-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+}
+.thumbs-down-2 {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 10rem;
+}
+.number-reseñas {
+  border-bottom: 2px solid white;
+}
+.time-published-2 {
+  display: flex;
+  justify-content: center;
+}
+.comments-2 {
+  width: 100%;
+  padding: 10px;
+  height: 6rem;
+  background-color: white;
+}
+/* ********************************--------------------------------------------------*/
+footer {
+  height: calc(100%);
+  margin-top: 2rem;
+  background-color: #003366;
+  display: grid;
+  padding: 0%;
+  width: 100%;
+  justify-items: center;
+}
+footer .image-container2 {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 106%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.image-container2 img {
+  height: 6rem;
+  width: 50%;
+}
+.image-container2 {
+  width: 100%;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: auto;
+  border-bottom: 2px white solid;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+.item {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.form input,
+.input-subscribe {
+  text-align: center;
+  border-radius: 10px;
+  height: 10px;
+  padding: 15px;
+  margin: 15px;
+}
+
+b {
+  padding-bottom: 20px;
+}
+.image-container2 img:first-child {
+  width: 90%;
+  height: 90%;
+}
+.redes {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  justify-items: end;
+}
+.footer-copyright-redes .redes svg {
+  width: 14%;
+}
+.footer-copyright-redes {
+  display: flex;
+  justify-content: start;
+  width: 90%;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 2px solid white;
+}
+.footer-copyright-redes p {
+  width: 100%;
+}
+.footer-copyright-redes svg {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  width: 5%;
+}
+
+button {
+  border: 0;
+  background-image: linear-gradient(150deg, #004400, #116611, #55aa55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  font-size: 20px;
+  padding: 3px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  animation-name: animationButton; /* Nombre de la animación */
+  animation-duration: 4s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-in-out; /* Función de temporización (puedes ajustarla según tus preferencias) */
+  animation-iteration-count: calc(1); /* Repetir la animación infinitamente */
+}
+button span {
+  padding: 10px 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+@keyframes animationButton {
+  0% {
+    transform: rotate(0turn);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
 }

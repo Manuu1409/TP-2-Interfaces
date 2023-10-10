@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/prueba.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -72,7 +72,7 @@
               fill="#F2F2F2"
             />
           </svg>
-          <li>Accion</li>
+          <li><a href="#accion">Accion</a></li>
         </div>
 
         <div class="item-menu-hamburgesa">
@@ -89,7 +89,7 @@
               fill="white"
             />
           </svg>
-          <li>Estrategia</li>
+          <li><a href="#estrategia">Estrategia</a></li>
         </div>
 
         <div class="item-menu-hamburgesa">
@@ -99,7 +99,7 @@
               fill="white"
             />
           </svg>
-          <li>Carreras</li>
+          <li><a href="#">Carreras</a></li>
         </div>
 
         <div class="item-menu-hamburgesa">
@@ -112,7 +112,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          <li>Puzzle</li>
+          <li><a href="#puzzles">Puzzle</a></li>
         </div>
 
         <div class="item-menu-hamburgesa">
@@ -122,7 +122,7 @@
               fill="white"
             />
           </svg>
-          <li>Adventura</li>
+          <li><a href="#">Adventura</a></li>
         </div>
       </ul>
     </nav>
@@ -173,22 +173,24 @@
 
         <div class="item-menu-user">
           <svg xmlns="http://www.w3.org/2000/svg" class="svg-1">
-            <path
-              d="M13.75 13.75V10.625C13.75 9.7962 14.0792 9.00134 14.6653 8.41529C15.2513 7.82924 16.0462 7.5 16.875 7.5H33.125C33.9538 7.5 34.7487 7.82924 35.3347 8.41529C35.9208 9.00134 36.25 9.7962 36.25 10.625V29.375C36.25 30.2038 35.9208 30.9987 35.3347 31.5847C34.7487 32.1708 33.9538 32.5 33.125 32.5H16.875C16.0462 32.5 15.2513 32.1708 14.6653 31.5847C14.0792 30.9987 13.75 30.2038 13.75 29.375V26.25"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M21.25 26.25L27.5 20L21.25 13.75M3.75 20H26.25"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+            <a href="./login.html">
+              <path
+                d="M13.75 13.75V10.625C13.75 9.7962 14.0792 9.00134 14.6653 8.41529C15.2513 7.82924 16.0462 7.5 16.875 7.5H33.125C33.9538 7.5 34.7487 7.82924 35.3347 8.41529C35.9208 9.00134 36.25 9.7962 36.25 10.625V29.375C36.25 30.2038 35.9208 30.9987 35.3347 31.5847C34.7487 32.1708 33.9538 32.5 33.125 32.5H16.875C16.0462 32.5 15.2513 32.1708 14.6653 31.5847C14.0792 30.9987 13.75 30.2038 13.75 29.375V26.25"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21.25 26.25L27.5 20L21.25 13.75M3.75 20H26.25"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </a>
           </svg>
-          <li>Cerrar Sesion</li>
+          <li><a href="./login.html">Cerrar Sesion</a></li>
         </div>
 
         <div class="separator"></div>
@@ -239,7 +241,9 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./images/batmanvssuperman.jpg" alt="amongUs" />
+            <a href="./4inline.html"
+              ><img src="./images/batmanvssuperman.jpg" alt="amongUs"
+            /></a>
             <div class="card-descripcion">
               <div class="card-tittle">
                 <p>Accion</p>
@@ -350,7 +354,7 @@
 
     <!--                            MAIN                                               -->
 
-    <h2 class="tipoDeJuego">Accion</h2>
+    <h2 class="tipoDeJuego" id="accion">Accion</h2>
     <div class="main">
       <div class="swiper-container mySwiper" id="swiper1" data-swiper="1">
         <div class="swiper-button-next"></div>
@@ -461,7 +465,7 @@
         </div>
       </div>
     </div>
-    <h2 class="tipoDeJuego">Puzzles</h2>
+    <h2 class="tipoDeJuego" id="puzzles">Puzzles</h2>
     <div class="main">
       <div class="swiper-container mySwiper" id="swiper2" data-swiper="2">
         <div class="swiper-button-next"></div>
@@ -626,7 +630,7 @@
       </div>
     </div>
 
-    <h2 class="tipoDeJuego">Estrategia</h2>
+    <h2 class="tipoDeJuego" id="estrategia">Estrategia</h2>
     <div class="main">
       <div class="swiper-container mySwiper" id="swiper4" data-swiper="4">
         <div class="swiper-button-next"></div>
